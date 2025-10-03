@@ -3,19 +3,41 @@
 
 import random
 niveau_vie = 20
+force_adversaire = int
+wins = 0
 
 def fight():
+    global niveau_vie
+    global force_adversaire
+    global wins
+
     Dice_throw = random.randint(1, 6)
+    if Dice_throw >= force_adversaire :
+        niveau_vie += force_adversaire
+        wins += 1
+        print(f"""Bravo, vous avez gagner se combat
+        Vous avez maintenant {niveau_vie} points de vie et {wins} victoires.""")
+    else :
+        niveau_vie -= force_adversaire
+        print(f"""Malhereusement, vous avez perdue se combat
+        Vous avez maintenant {niveau_vie} points de vie.""")
+
 
 def avoid():
+    global niveau_vie
+
     print("Vous éviter le combat et perdez 1 point de vie.")
-    niveau_vie - 1
+    niveau_vie -= 1
     print(f"Vous avez maintenant {niveau_vie} points de vie")
 
 
 def new_room():
-    force_adversaire = random.randint(1, 5)
+    global niveau_vie
+    global force_adversaire
+    global wins
 
+    print(f"""Vous avez {wins} victoires et {niveau_vie} de vie""")
+    force_adversaire = random.randint(1, 5)
     print(f"Vous tombez face à face avec un adversaire de difficulté {force_adversaire}")
 
     def action():
@@ -23,30 +45,32 @@ def new_room():
             1- Combattre cet adversaire
             2- Contourner cet adversaire et aller ouvrir une autre porte
             3- Afficher les règles du jeu
-            4- Quitter la partie""")) #options d'actions
+            4- Quitter la partie"""))  # options d'actions
 
-        if choice == 1 :
+        if choice == 1:
             fight()
-        elif choice == 2 :
+            new_room()
+        elif choice == 2:
             avoid()
             new_room()
-        elif choice == 3 :
+        elif choice == 3:
             print("""Vous commencez la partie avec une niveau de vie de 20
             Vous vous retrouvez face à face avec un adversaire d'une force de 1 à 5
             Vous pouvez soit combattre cet adversaire ou contourner cet adversaire et aller ouvrir une autre porte
             Si vous attaquer l'adversaire le jeu effectueras un lancer de dé (dé six), 
             le résultat doit être plus haut que la force du monstre pour que vous gagnier
-            
+
             Dans eventualité que vous gangner, vous gagnerez en nombres de vie la force de l'ennemi que vous avez vaincu.
             Cependant, si vous perdez, vous perderez en le nombres de vie la force de l'ennemi qui vous a vaincu.
-            
+
             Si vous décidez de contourner cet adversaire il y aura une pénalité de 1 point de vie, 
             ensuite, vous vous retrouverez contre un nouvelle adversaire.
-            
-            Le but du jeu est d'accumuler le plus de victoires.""") #règles
+
+            Le but du jeu est d'accumuler le plus de victoires.""")  # règles
             action()
-        else :
+        else:
             exit()
 
-new_room()
+    action()
 
+new_room()
