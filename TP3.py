@@ -5,11 +5,13 @@ import random
 niveau_vie = 20
 force_adversaire = int
 wins = 0
+Boss = False
 
 def fight():
     global niveau_vie
     global force_adversaire
     global wins
+    global Boss
 
     Dice_throw = random.randint(1, 6)
     if Dice_throw >= force_adversaire :
@@ -17,6 +19,8 @@ def fight():
         wins += 1
         print(f"""Bravo, vous avez gagner se combat
         Vous avez maintenant {niveau_vie} points de vie et {wins} victoires.""")
+        if wins % 3 == 0 :
+            Boss = True
     else :
         niveau_vie -= force_adversaire
         print(f"""Malhereusement, vous avez perdue se combat
@@ -35,9 +39,19 @@ def new_room():
     global niveau_vie
     global force_adversaire
     global wins
+    global Boss
+
+    if niveau_vie <= 0 :
+        print(f"""Vous êtes succombez à vos blessures,
+        vous aviez {wins} victoires, félicitation.""")
+        exit()
 
     print(f"""Vous avez {wins} victoires et {niveau_vie} de vie""")
-    force_adversaire = random.randint(1, 5)
+    if Boss == True :
+        force_adversaire = random.randint(5, 6)
+        Boss = False
+    else :
+        force_adversaire = random.randint(1, 5)
     print(f"Vous tombez face à face avec un adversaire de difficulté {force_adversaire}")
 
     def action():
@@ -69,6 +83,7 @@ def new_room():
             Le but du jeu est d'accumuler le plus de victoires.""")  # règles
             action()
         else:
+
             exit()
 
     action()
