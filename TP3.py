@@ -1,9 +1,9 @@
-#ce code
+#ce code est un jeu ou le but est de battre plus d'adversaire possible dans un donjon
 #Par Milan Mallak
 
 import random
 niveau_vie = 20
-force_adversaire = int
+force_adversaire = type[int]
 wins = 0
 Boss = False
 
@@ -13,18 +13,31 @@ def fight():
     global wins
     global Boss
 
-    Dice_throw = random.randint(1, 6)
-    if Dice_throw >= force_adversaire :
-        niveau_vie += force_adversaire
-        wins += 1
-        print(f"""Bravo, vous avez gagner se combat
-        Vous avez maintenant {niveau_vie} points de vie et {wins} victoires.""")
-        if wins % 3 == 0 :
-            Boss = True
+    if Boss == False :
+        Dice_throw = random.randint(1, 6)
+        if Dice_throw >= force_adversaire :
+            niveau_vie += force_adversaire
+            wins += 1
+            print(f"""Bravo, vous avez gagner se combat
+            Vous avez maintenant {niveau_vie} points de vie et {wins} victoires.""")
+            if wins % 3 == 0 :
+                Boss = True
+        else :
+            niveau_vie -= force_adversaire
+            print(f"""Malhereusement, vous avez perdue se combat
+            Vous avez maintenant {niveau_vie} points de vie.""")
     else :
-        niveau_vie -= force_adversaire
-        print(f"""Malhereusement, vous avez perdue se combat
-        Vous avez maintenant {niveau_vie} points de vie.""")
+        Dice_throw = random.randint(1, 6)
+        if Dice_throw >= force_adversaire :
+            niveau_vie += force_adversaire
+            wins += 1
+            print(f"""Bravo, vous avez vaincu le boss!
+            Vous avez maintenant {niveau_vie} points de vie et {wins} victoires.""")
+        else :
+            niveau_vie -= force_adversaire
+            print(f"""Malhereusement, vous avez perdue le combat
+            Vous avez maintenant {niveau_vie} points de vie.""")
+        Boss = False
 
 
 def avoid():
@@ -49,10 +62,10 @@ def new_room():
     print(f"""Vous avez {wins} victoires et {niveau_vie} de vie""")
     if Boss == True :
         force_adversaire = random.randint(5, 6)
-        Boss = False
+        print(f"Vous tombez face à face avec un boss de difficulté {force_adversaire} !")
     else :
         force_adversaire = random.randint(1, 5)
-    print(f"Vous tombez face à face avec un adversaire de difficulté {force_adversaire}")
+        print(f"Vous tombez face à face avec un adversaire de difficulté {force_adversaire}")
 
     def action():
         choice = int(input("""Que voulez-vous faire ?
@@ -83,7 +96,7 @@ def new_room():
             Le but du jeu est d'accumuler le plus de victoires.""")  # règles
             action()
         else:
-
+            print(f"Vous aviez {wins} victoires, félicitation.")
             exit()
 
     action()
