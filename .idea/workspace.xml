@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="171a77a8-dd4c-43e6-879d-532fec87b570" name="Changes" comment="">
+    <list default="true" id="171a77a8-dd4c-43e6-879d-532fec87b570" name="Changes" comment="yahoo">
+      <change afterPath="$PROJECT_DIR$/TP4.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TP3.py" beforeDir="false" afterPath="$PROJECT_DIR$/TP3.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +35,9 @@
     &quot;accountId&quot;: &quot;541c9377-eb6a-4d79-9535-5fe0f0e6fde0&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -44,15 +47,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.TP2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.TP3.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/mallakm/PycharmProjects/Mes projets&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.TP2.executor": "Run",
+    "Python.TP3.executor": "Run",
+    "Python.TP4.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/mallakm/PycharmProjects/Mes projets",
+    "run.code.analysis.last.selected.profile": "aDefault"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\mallakm\PycharmProjects\Mes projets" />
@@ -74,6 +79,20 @@
       <option name="presentableId" value="Default" />
       <updated>1757429830749</updated>
     </task>
+    <task id="LOCAL-00001" summary="yahoo">
+      <option name="closed" value="true" />
+      <created>1761148425759</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1761148425759</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="yaho" />
+    <MESSAGE value="yahoo" />
+    <option name="LAST_COMMIT_MESSAGE" value="yahoo" />
   </component>
 </project>
