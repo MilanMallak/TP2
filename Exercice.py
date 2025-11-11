@@ -77,3 +77,14 @@ class Hero :
     def life_check(self):
         if self.nb_pt_vie <= 0 :
             print("Vous avez succombé à vos blessures.")
+
+class Stats :
+    def __init__(self):
+        self.strg = str
+
+
+        self.dex
+        self.con
+        self.intel
+        self.wis
+        self.cha
