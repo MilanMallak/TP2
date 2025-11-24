@@ -1,4 +1,4 @@
-#ce code
+#ce code represente les exercices de classe différents
 #Par Milan Mallak
 
 import random
@@ -17,6 +17,7 @@ stringfoo = StringFoo("")
 stringfoo.set_string()
 stringfoo.print_string()
 
+# exercice de classe 2
 class Rectangle :
     def __init__(self, largeur, longueur, aire_R):
         self.largeur = largeur
@@ -36,6 +37,7 @@ rectangle = Rectangle(largeur, longueur, aire_R)
 rectangle.calcul_aire_R()
 rectangle.afficher_infos_R()
 
+# exercice de classe 3
 class Cercle :
     def __init__(self, rayon, aire_C, circonference):
         self.rayon = rayon
@@ -59,6 +61,7 @@ cercle.calcul_aire_C()
 cercle.calcul_circonference_C()
 cercle.afficher_infos_C()
 
+# exercice de classe 4
 class Hero :
     def __init__(self, nb_pt_vie, force_atk, force_def, nom):
         self.nb_pt_vie = nb_pt_vie
@@ -78,13 +81,21 @@ class Hero :
         if self.nb_pt_vie <= 0 :
             print("Vous avez succombé à vos blessures.")
 
+# exercice de classe 5
 class Stats :
-    def __init__(self):
-        self.strg = str
+    def __init__(self, strg, dex, con, intel, wis, cha):
+        self.strg = strg
 
+        self.dex = dex
+        self.con = con
+        self.intel = intel
+        self.wis = wis
+        self.cha = cha
 
-        self.dex
-        self.con
-        self.intel
-        self.wis
-        self.cha
+Stats.strg = random.randint(1, 20)
+Stats.con = random.randint(1, 20)
+Stats.intel = random.randint(1, 20)
+Stats.wis = random.randint(1, 20)
+Stats.cha = random.randint(1, 20)
+
+# L'exercice 6 est dans son propre fichier python
