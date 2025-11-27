@@ -4,7 +4,7 @@
 import random
 from math import pi
 
-# exercice de classe 1
+# exercice de classe 1, étape 1
 class StringFoo :
     def __init__(self, message):
         self.message = message
@@ -17,7 +17,7 @@ stringfoo = StringFoo("")
 stringfoo.set_string()
 stringfoo.print_string()
 
-# exercice de classe 2
+# exercice de classe 1, étape 2
 class Rectangle :
     def __init__(self, largeur, longueur, aire_R):
         self.largeur = largeur
@@ -37,7 +37,7 @@ rectangle = Rectangle(largeur, longueur, aire_R)
 rectangle.calcul_aire_R()
 rectangle.afficher_infos_R()
 
-# exercice de classe 3
+# exercice de classe 1, étape 3
 class Cercle :
     def __init__(self, rayon, aire_C, circonference):
         self.rayon = rayon
@@ -61,7 +61,7 @@ cercle.calcul_aire_C()
 cercle.calcul_circonference_C()
 cercle.afficher_infos_C()
 
-# exercice de classe 4
+# exercice de classe 1, étape 4
 class Hero :
     def __init__(self, nb_pt_vie, force_atk, force_def, nom):
         self.nb_pt_vie = nb_pt_vie
@@ -81,11 +81,10 @@ class Hero :
         if self.nb_pt_vie <= 0 :
             print("Vous avez succombé à vos blessures.")
 
-# exercice de classe 5
+# exercice de classe 1, étape 5
 class Stats :
     def __init__(self, strg, dex, con, intel, wis, cha):
         self.strg = strg
-
         self.dex = dex
         self.con = con
         self.intel = intel
@@ -93,9 +92,10 @@ class Stats :
         self.cha = cha
 
 Stats.strg = random.randint(1, 20)
+Hero.dex = random.randint(1,20)
 Stats.con = random.randint(1, 20)
 Stats.intel = random.randint(1, 20)
 Stats.wis = random.randint(1, 20)
 Stats.cha = random.randint(1, 20)
 
-# L'exercice 6 est dans son propre fichier python
+# L'exercice 1, étape 6 est dans son propre fichier python
