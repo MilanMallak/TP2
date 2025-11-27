@@ -1,4 +1,4 @@
-# exerice de classe 6
+# exerice de classe 1, étape 6
 #Par Milan Mallak
 
 import random

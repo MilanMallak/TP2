@@ -1,4 +1,4 @@
-#ce code represente les exercices de classe différents
+#ce code represente les étapes du première exercice de classe
 #Par Milan Mallak
 
 import random
