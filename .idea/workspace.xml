@@ -23,20 +23,20 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "history": [
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;history&quot;: [
     {
-      "searchQuery": "names",
-      "state": "OPEN",
-      "assignee": "MilanMallak"
+      &quot;searchQuery&quot;: &quot;names&quot;,
+      &quot;state&quot;: &quot;OPEN&quot;,
+      &quot;assignee&quot;: &quot;MilanMallak&quot;
     }
   ],
-  "lastFilter": {
-    "searchQuery": "names",
-    "state": "OPEN",
-    "assignee": "MilanMallak"
+  &quot;lastFilter&quot;: {
+    &quot;searchQuery&quot;: &quot;names&quot;,
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;MilanMallak&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/MilanMallak/TP2.git&quot;,
@@ -55,21 +55,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.Exercice.executor": "Run",
-    "Python.Exercice1_etape6.executor": "Run",
-    "Python.Exercice2.executor": "Run",
-    "Python.TP2.executor": "Run",
-    "Python.TP3.executor": "Run",
-    "Python.TP4.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/mallakm/PycharmProjects/Mes projets",
-    "run.code.analysis.last.selected.profile": "aDefault",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.Exercice.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Exercice1_etape6.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Exercice2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.TP2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.TP3.executor&quot;: &quot;Run&quot;,
+    &quot;Python.TP4.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/mallakm/PycharmProjects/Mes projets&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;aDefault&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\mallakm\PycharmProjects\Mes projets" />

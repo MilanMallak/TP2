@@ -7,42 +7,52 @@ import names
 valeur = int
 opt_genre = ["male", "female"]
 genre = str
-opt_profession = [""]
 rndm_name = str
+opt_profession = [""]
+rndm_profession = str
 
-# Carpenter : 11-strg 11-dex
-# Stonemason : 11-strg 11-dex
+prf_strg = []
 
-# Armorer : 14-strg 12-dex
-# Blacksmith : 14-strg 11-dex
 
-# Farmer : 10-stg 11-con
-# Fisherman : 10-stg 11-con
-# Miller : 12-stg 10-con
+def ctrl_rndm_profession():
 
-# Butcher : 14-str
-# Baker : 10-wis
-# Cook : 14-dex 14-con 10-wis
-# Beerbrewer : no req
-# Innkeeper : 10-cha
 
-# Apothecary : 12-intel 13-wis
-# Barber surgeon : 14-intel 14-wis
 
-# Shoemaker : 14-dex
-# Tailor : 14-dex
 
-# Architect : 14-intel
+#                                       strg, dex, con, intel, wis, cha
+# Carpenter : 11-strg 11-dex :          11,    11,   0,     0,   0,   0
+# Stonemason : 11-strg 11-dex :         11,    11,   0,     0,   0,   0
 
-# Clerk : 11-intel
-# Merchant : 12-intel 14-cha
-# Bailiff : 14-strg 12-wis
+# Armorer : 14-strg 12-dex :            14,    12,   0,     0,   0,   0
+# Blacksmith : 14-strg 11-dex :         14,    11,   0,     0,   0,   0
 
-# Alchemist : 14-int 16 wis
-# Astronomer : 16-intel 14-wis
+# Farmer : 10-stg 11-con :              11,     0,  11,     0,   0,   0
+# Fisherman : 10-stg 11-con :           10,     0,  10,     0,   0,   0
+# Miller : 12-stg 10-con :              12,     0,  10,     0,   0,   0
 
-# Candlemaker : no req
-# Scribe : 12-dex 13-wis
+# Butcher : 14-str :                    14,     0,   0,     0,   0,   0
+# Baker : 10-wis :                       0,     0,   0,     0,  10,   0
+# Cook : 14-dex 14-con 10-wis :          0,    14,  14,     0,  10,   0
+# Beerbrewer : no req :                  0,     0,   0,     0,   0,   0
+# Innkeeper : 10-cha :                   0,     0,   0,     0,   0,  10
+
+# Apothecary : 12-intel 13-wis :         0,     0,   0,    12,  13,   0
+# Barber surgeon : 14-intel 14-wis :     0,     0,   0,    14,  14,   0
+
+# Shoemaker : 14-dex :                   0,    14,   0,     0,   0,   0
+# Tailor : 14-dex :                      0,    14,   0,     0,   0,   0
+
+# Architect : 14-intel :                 0,     0,   0,    14,   0,   0
+
+# Clerk : 11-intel :                     0,     0,   0,    11,   0,   0
+# Merchant : 12-intel 14-cha :           0,     0,   0,    12,   0,  14
+# Bailiff : 14-strg 12-wis :            14,     0,   0,     0,  12,   0
+
+# Alchemist : 14-int 16 wis :            0,     0,   0,    14,  16,   0
+# Astronomer : 16-intel 14-wis :         0,     0,   0,    16,  14,   0
+
+# Candlemaker : no req :                 0,     0,   0,     0,   0,   0
+# Scribe : 12-dex 13-wis :               0,    12,   0,     0,  13,   0
 
 def rndm_attribut():
     global valeur
