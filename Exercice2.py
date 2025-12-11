@@ -8,51 +8,65 @@ valeur = int
 opt_genre = ["male", "female"]
 genre = str
 rndm_name = str
-opt_profession = [""]
+
 rndm_profession = str
 
-prf_strg = []
+opt_profession = {
+opt_profession["Carpente"] =        [11, 11, 0, 0, 0, 0]
+opt_profession["Stonemason"] =      [11, 11, 0, 0, 0, 0]
+opt_profession["Armorer"] =         [14, 12, 0, 0, 0, 0]
+opt_profession["Blacksmith"] =      [14, 11, 0, 0, 0, 0]
+opt_profession["Farmer"] =          [0, 11, 0, 0, 0]
+opt_profession["Fisherman"] =       [10, 0, 10, 0, 0, 0]
+opt_profession["Miller"] =          [12, 0, 10, 0, 0, 0]
+opt_profession["Butcher"] =         [14, 0, 0, 0, 0, 0]
+opt_profession["Baker"] =           [0, 0, 0, 0, 10, 0]
+opt_profession["Cook"] =            [0, 14, 14, 0, 10, 0
+opt_profession["Beerbrewer"] =      [0, 0, 0, 0, 0, 0]
+opt_profession["Innkeeper"] =       [0, 0, 0, 0, 0, 10]
+opt_profession["Apothecary"] =      [0, 0, 0, 12, 13, 0]
+opt_profession["Barber surgeon"] =  [0, 0, 0, 14, 14, 0]
+opt_profession["Shoemaker"] =       [0, 14, 0, 0, 0, 0]
+opt_profession["Tailor"] =          [0, 14, 0, 0, 0, 0]
+opt_profession["Architect"] =       [0, 0, 0, 14, 0, 0]
+opt_profession["Clerk"] =           [0, 0, 0, 11, 0, 0]
+opt_profession["Merchant"] =        [0, 0, 0, 12, 0, 14]
+opt_profession["Bailiff"] =         [14, 0, 0, 0, 12, 0]
+opt_profession["Alchemist"] =       [0, 0, 0, 14, 16, 0]
+opt_profession["Astronomer"] =      [0, 0, 0, 16, 14, 0]
+opt_profession["Candlemaker"] =     [0, 0, 0, 0, 0, 0]
+opt_profession["Scribe"] =          [0, 12, 0, 0, 13, 0]
 
+opt_profession = {}                                         #    strg, dex, con, intel, wis, cha
+opt_profession["Carpente"] =        [11, 11, 0, 0, 0, 0]    #    11,    11,   0,     0,   0,   0
+opt_profession["Stonemason"] =      [11, 11, 0, 0, 0, 0]    #    11,    11,   0,     0,   0,   0
+opt_profession["Armorer"] =         [14, 12, 0, 0, 0, 0]    #    14,    12,   0,     0,   0,   0
+opt_profession["Blacksmith"] =      [14, 11, 0, 0, 0, 0]    #    14,    11,   0,     0,   0,   0
+opt_profession["Farmer"] =          [0, 11, 0, 0, 0]        #    11,     0,  11,     0,   0,   0
+opt_profession["Fisherman"] =       [10, 0, 10, 0, 0, 0]    #    10,     0,  10,     0,   0,   0
+opt_profession["Miller"] =          [12, 0, 10, 0, 0, 0]    #    12,     0,  10,     0,   0,   0
+opt_profession["Butcher"] =         [14, 0, 0, 0, 0, 0]     #    14,     0,   0,     0,   0,   0
+opt_profession["Baker"] =           [0, 0, 0, 0, 10, 0]     #     0,     0,   0,     0,  10,   0
+opt_profession["Cook"] =            [0, 14, 14, 0, 10, 0]   #     0,    14,  14,     0,  10,   0
+opt_profession["Beerbrewer"] =      [0, 0, 0, 0, 0, 0]      #     0,     0,   0,     0,   0,   0
+opt_profession["Innkeeper"] =       [0, 0, 0, 0, 0, 10]     #     0,     0,   0,     0,   0,  10
+opt_profession["Apothecary"] =      [0, 0, 0, 12, 13, 0]    #     0,     0,   0,    12,  13,   0
+opt_profession["Barber surgeon"] =  [0, 0, 0, 14, 14, 0]    #     0,     0,   0,    14,  14,   0
+opt_profession["Shoemaker"] =       [0, 14, 0, 0, 0, 0]     #     0,    14,   0,     0,   0,   0
+opt_profession["Tailor"] =          [0, 14, 0, 0, 0, 0]     #     0,    14,   0,     0,   0,   0
+opt_profession["Architect"] =       [0, 0, 0, 14, 0, 0]     #     0,     0,   0,    14,   0,   0
+opt_profession["Clerk"] =           [0, 0, 0, 11, 0, 0]     #     0,     0,   0,    11,   0,   0
+opt_profession["Merchant"] =        [0, 0, 0, 12, 0, 14]    #     0,     0,   0,    12,   0,  14
+opt_profession["Bailiff"] =         [14, 0, 0, 0, 12, 0]    #    14,     0,   0,     0,  12,   0
+opt_profession["Alchemist"] =       [0, 0, 0, 14, 16, 0]    #     0,     0,   0,    14,  16,   0
+opt_profession["Astronomer"] =      [0, 0, 0, 16, 14, 0]    #     0,     0,   0,    16,  14,   0
+opt_profession["Candlemaker"] =     [0, 0, 0, 0, 0, 0]      #     0,     0,   0,     0,   0,   0
+opt_profession["Scribe"] =          [0, 12, 0, 0, 13, 0]    #     0,    12,   0,     0,  13,   0
 
 def ctrl_rndm_profession():
 
 
 
-
-#                                       strg, dex, con, intel, wis, cha
-# Carpenter : 11-strg 11-dex :          11,    11,   0,     0,   0,   0
-# Stonemason : 11-strg 11-dex :         11,    11,   0,     0,   0,   0
-
-# Armorer : 14-strg 12-dex :            14,    12,   0,     0,   0,   0
-# Blacksmith : 14-strg 11-dex :         14,    11,   0,     0,   0,   0
-
-# Farmer : 10-stg 11-con :              11,     0,  11,     0,   0,   0
-# Fisherman : 10-stg 11-con :           10,     0,  10,     0,   0,   0
-# Miller : 12-stg 10-con :              12,     0,  10,     0,   0,   0
-
-# Butcher : 14-str :                    14,     0,   0,     0,   0,   0
-# Baker : 10-wis :                       0,     0,   0,     0,  10,   0
-# Cook : 14-dex 14-con 10-wis :          0,    14,  14,     0,  10,   0
-# Beerbrewer : no req :                  0,     0,   0,     0,   0,   0
-# Innkeeper : 10-cha :                   0,     0,   0,     0,   0,  10
-
-# Apothecary : 12-intel 13-wis :         0,     0,   0,    12,  13,   0
-# Barber surgeon : 14-intel 14-wis :     0,     0,   0,    14,  14,   0
-
-# Shoemaker : 14-dex :                   0,    14,   0,     0,   0,   0
-# Tailor : 14-dex :                      0,    14,   0,     0,   0,   0
-
-# Architect : 14-intel :                 0,     0,   0,    14,   0,   0
-
-# Clerk : 11-intel :                     0,     0,   0,    11,   0,   0
-# Merchant : 12-intel 14-cha :           0,     0,   0,    12,   0,  14
-# Bailiff : 14-strg 12-wis :            14,     0,   0,     0,  12,   0
-
-# Alchemist : 14-int 16 wis :            0,     0,   0,    14,  16,   0
-# Astronomer : 16-intel 14-wis :         0,     0,   0,    16,  14,   0
-
-# Candlemaker : no req :                 0,     0,   0,     0,   0,   0
-# Scribe : 12-dex 13-wis :               0,    12,   0,     0,  13,   0
 
 def rndm_attribut():
     global valeur
